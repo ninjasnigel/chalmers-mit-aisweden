@@ -60,6 +60,6 @@ def animate(i):
     path_line.set_data(x2[:i], y2[:i])  # Set data for path line
     return pendulum_line, path_line,
 
-ani = animation.FuncAnimation(fig, animate, frames=len(t), init_func=init, blit=True)
+ani = animation.FuncAnimation(fig, animate, frames=len(t), init_func=init, blit=True, interval=25)
 
 plt.show()
